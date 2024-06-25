@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script defer src="script/app.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <section class="menuu">
+        <div class="menu">
+            <div class="indicator">
+                    
+            </div>
+            <div class="list">
+                <div class="item active" color="#4070f4" tooltip="Accueil">
+                    <a href="#home"><i class='bx bx-home'></i></a>
+                </div>
+                <div class="item active" color="#4070f4" tooltip="Profil">
+                    <a href="#Profil"><i class='bx bxs-face'></i></a>
+                </div>
+                <div class="item active" color="#4070f4" tooltip="Compétences">
+                    <a href="#Compétences"><i class='bx bx-book'></i></a>
+                </div>
+                <div class="item active" color="#4070f4" tooltip="Formation">
+                    <a href="#Formation"><i class='bx bxs-graduation'></i></a>
+                </div>
+                <div class="item active" color="#4070f4" tooltip="Projets">
+                    <a href="#Projet"><i class='bx bx-task' ></i></a>
+                </div>
+                <div class="item active" color="#4070f4" tooltip="Contact">
+                    <a href="#contact"><i class='bx bxs-contact' ></i></a>                
+                </div>
+                    
+            </div>
+        </div>
+        <script>
+            let menuItems = document.querySelectorAll(".menu .list .item");
+            let menuIndicator = document.querySelector(".menu .indicator");
+                for(let i=0;i<menuItems.length;i++){
+                    menuItems[i].addEventListener("click",function(){
+                    menuIndicator.style.background = menuItems[i].getAttribute("color");
+                    menuIndicator.style.left = `calc(${(i*20)+20}px + ${i*50}px)`;
+            
+                });
+            }
+        </script>
+            
+        <div class="hero" id="home">
+            <img src="img/home-img.png" alt="">
+        
+            <div class="content">
+                 <h1>Bryan Guerin</h1>
+                    <button class="btn-home btn1"><a href="#Profil">Explorez</a></button>
+                 
+                <!-- <button class="btn btn1">Explore</button> -->
+            </div>
+        </div>    
+    </section>
+    <div class="container">
+        <section class="one" id="Profil">
+
+            <div class="container-profile">
+                <h1>Qui suis-je ?</h1>
+            
+                <div class="about">
+                    <img src="img/pdp.png" class="pic" />
+                    <div class="text">
+                        <h5>Développeur <span>Junior</span></h5>
+                        <p>
+                            Né à Ancenis dans le département de la Loire-Atlantique et ayant actuellement 18 ans, je suis développeur junior en première année de BTS SIO option SLAM (Solutions Logicielles et Applications Métiers) au lycée Chevrollier à Angers. <br>Passionné par l'informatique et ses rouages depuis l'enfance, je me suis naturellement tourné vers ce domaine dès le lycée et ai finalement choisi ma formation actuelle ayant le besoin de me spécialiser dans le domaine du développement et de monter en compétences. <br> Actuellement en fin de première année, j’ai acquis de solides bases en développement web, logiciel/applicatif mais aussi en gestion de bases de données.                       
+                        </p>
+                      
+                      
+                        <!-- <a href="https://fr.linkedin.com/in/bryan-guerin-4a55592a9?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Ffr.linkedin.com%2Fpub%2Fdir%2FBryan%2FGuerin"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/bguerin1?tab=repositories"><i class='bx bxl-github' ></i></a> 
+                        <a href="#"><i class='bx bxl-gmail' ></i></a> -->
+                      
+                        <div class="data">
+                            <a href="#contact" class="btn-site">Contactez-moi</a>
+                            <a href="pdf/cv.pdf" class="btn-site">Téléchargez mon CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="two" id="Compétences">
+            <div class="container-skills">
+                <h1> Mes Compétences</h1> 
+                <!-- <a href="#Profil" class="btn">Téléchargez mon CV !</a> -->
+                <div class="row-skills">
+                    <div class="skills">
+                        <i class='bx bxl-html5'></i>
+                        <h2>HTML</h2>
+                        <p>Front-End</p>
+                        <br>
+                        <p>Acquise lors de la 1ère année de BTS SIO en TP.</p>
+                    </div>
+                    <div class="skills">
+                        <i class='bx bxl-css3'></i>
+                        <h2>CSS</h2>
+                        <p>Front-End</p>
+                        <br>
+                        <p>Acquise lors de la 1ère année de BTS SIO en TP.</p>
+                    </div>
+                    <div class="skills">
+                        <i class='bx bxl-javascript'></i>
+                        <h2>Javascript</h2>
+                        <p>Front-End</p>
+                        <br>
+                        <p>Acquise lors de la 1ère année de BTS SIO en TP.</p>
+                    </div>
+                    <div class="skills">
+                        <i class='bx bxl-php'></i>
+                        <h2>PHP</h2>
+                        <p>Back-End</p>
+                        <br>
+                        <p>Acquise lors de la 1ère année de BTS SIO en TP.</p>
+                    </div>
+                    <div class="skills">
+                        <i class='bx bxs-data' ></i>
+                        <h2>SQL</h2>
+                        <p>Back-End</p>
+                        <br>
+                        <p>Acquise lors de la 1ère année de BTS SIO en TP.</p>
+                    </div>
+                    <div class="skills">
+                        <i class='bx bxl-git'></i>
+                        <h2>Git</h2>
+                        <p>Back-End</p>
+                        <br>
+                        <p>Acquise lors de la 1ère année de BTS SIO en TP.</p>
+                    </div>
+                    <div class="skills">
+                        <i class='bx bxl-java'></i>
+                        <h2>Java</h2>
+                        <p>Logiciel/Applicatif</p>
+                        <br>
+                        <p>Compétence développée dans le cadre du projet Talend Doc en stage de 1ère année de BTS SIO à Manitou Group.</p>
+                    </div>
+                    <div class="skills">
+                        <i class='bx bxl-python'></i>
+                        <h2>Python</h2>
+                        <p>Web/Logiciel/Applicatif</p>
+                        <br>
+                        <p>Compétence développée dès le lycée en spécialité NSI.</p>
+                    </div>
+                    <div class="skills">
+                        <i class='bx bxl-figma'></i>
+                        <h2>Figma</h2>
+                        <p>Web Design</p>
+                        <br>
+                        <p>Niveau débutant pour cette compétence que j'ai développé au sein du projet Talend Doc en stage de 1ère année de BTS SIO à Manitou Group.</p>
+                    </div>
+                    <div class="skills">
+                        <i class='bx bxl-wordpress'></i>
+                        <h2>Wordpress</h2>
+                        <p>CMS</p>
+                        <br>
+                        <p>Compétence développée dans le cadre du BTS SIO lors d'un atelier de professionnalisation sur 6 semaines en spécialité SLAM.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="five" id="Formation">
+            <h1> Mes Formations</h1>
+            <div class="wrapper">
+                <div class="center-line">
+                  <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+                </div>
+                <div class="row row-1">
+                  <section>
+                    <img src="img/chevrollier.png" alt="">
+                    <div class="details">
+                      <span class="title">Lycée Chevrollier - Angers</span>
+                      <span>2024-2025</span>
+                    </div>
+                    <p>BTS SIO - 2nd année option SLAM (Solutions Logicielles et Applications Métiers).</p>
+                    <div class="bottom">
+                        <a href="https://chevrollier.paysdelaloire.e-lyco.fr/">En savoir plus</a>
+                    </div>
+                  </section>
+                </div>
+                <div class="row row-2">
+                  <section>
+                    <img src="img/manitou.png" alt="">
+                    <div class="details">
+                      <span class="title">Stage - Manitou Group</span>
+                      <span>20 mai - 28 juin 2024</span>
+                    </div>
+                    <p>
+                        Stage de première année de BTS SIO au sein du service IT&Digital de l'entreprise Manitou-Group dans l'équipe de mon tuteur.
+                        L'objectif de ce stage était de participer au développement du client lourd "Talend Doc" en Java version 17 avec le framework Eclipse RCP. 
+                        Mon rôle était de développer la logique et la visualisation des composants pas encore implémentés sur le logiciel...
+
+                        
+
+                    </p>
+                    <div class="bottom">
+                      <a href="stage.html">En savoir plus</a>
+                    </div>
+                  </section>
+                </div>
+                <div class="row row-1">
+                  <section>
+                    <img src="img/chevrollier.png" alt="">
+                    <div class="details">
+                      <span class="title">Lycée Chevrollier - Angers</span>
+                      <span>2023-2024</span>
+                    </div>
+                    <p>BTS SIO - 1ère année option SLAM (Solutions Logicielles et Applications Métiers).</p>
+                    <div class="bottom">
+                      <a href="https://chevrollier.paysdelaloire.e-lyco.fr/">En savoir plus</a>
+                      
+                    </div>
+                  </section>
+                </div>
+                <div class="row row-2">
+                  <section>
+                    <i class="icon fas fa-globe"></i>
+                    <div class="details">
+                      <span class="title">Lycée Joubert-Maillard</span>
+                      <span>2020-2023</span>
+                    </div>
+                    <p>Obtention du Baccalauréat en filière générale - Spécialité NSI / SI avec la mention Bien.</p>
+                    <div class="bottom">
+                        <a href="https://joubert-maillard.paysdelaloire.e-lyco.fr/">En savoir plus</a>
+                      </div>
+                  </section>
+                </div>
+              </div>
+    
+        </section>
+
+        <section class="three" id="Projet">
+            <h1>Mes Projets</h1>
+
+            <ul class="project-filter">
+                <li class="list project-filter-active" data-filter="all">All</li>
+                <li class="list" data-filter="web-dev">Développement Web</li>
+                <li class="list" data-filter="app">Application</li>
+                <li class="list" data-filter="cms">CMS</li>
+            </ul>
+    
+            <div class="project-container">
+                <a href="#Projet" class="project-box web-dev" onclick="togglePopup()">
+                    <img src="img/blog-final.png" alt="">
+                </a>
+                <a href="#Projet" class="project-box web-dev" onclick="togglePopup1()">
+                    <img src="img/bois.png" alt="">
+                </a>
+                <a href="#Projet" class="project-box cms" onclick="togglePopup2()">
+                    <img src="img/wp.png" alt="">
+                </a>
+                <a href="#Projet" class="project-box web-dev" onclick="togglePopup3()">
+                    <img src="img/adventure.png" alt="">
+                </a>
+                <a href="#Projet" class="project-box app" onclick="togglePopup4()">
+                    <img src="img/jeupendu.png" alt="">
+                </a>
+            </div>
+            <script>
+                function togglePopup(){
+                    document.getElementById("popup-1").classList.toggle("active");
+                }
+                function togglePopup1(){
+                    document.getElementById("popup-2").classList.toggle("active");
+                }
+                function togglePopup2(){
+                    document.getElementById("popup-3").classList.toggle("active");
+                }
+                function togglePopup3(){
+                    document.getElementById("popup-4").classList.toggle("active");
+                }
+                function togglePopup4(){
+                    document.getElementById("popup-5").classList.toggle("active");
+                }
+                function togglePopup5(){
+                    document.getElementById("popup-6").classList.toggle("active");
+                }
+                function togglePopup6(){
+                    document.getElementById("popup-7").classList.toggle("active");
+                }
+                function togglePopup7(){
+                    document.getElementById("popup-8").classList.toggle("active");
+                }
+                function togglePopup8(){
+                    document.getElementById("popup-9").classList.toggle("active");
+                }
+            </script>
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup()">&times;</div>
+                  <img src="img/blog-final.png" alt="">
+                  <h2>BTS SIO - Blog</h2>
+                  <p>Ce site web réalisé en <span>HTML - CSS</span> est un projet de début d'année dont le but était de nous initier au développement web avec un apprentissage en autonomie.</p>
+                  <br>
+                  <p>Lien Github : <a href="https://github.com/bguerin1/blog">Blog</a></p>
+                </div>
+            </div>
+            <div class="popup" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup1()">&times;</div>
+                  <img src="img/bois.png" alt="">
+                  <h2>BTS SIO - Bois du Roy</h2>
+                  <p>Réalisation d'un outil web pour l'entreprise fictive Bois Du Roy en <span>HTML - CSS - JS</span> permettant de mettre en place un système de gestion de notes de frais pour ses commerciaux. Le but était de fournir
+                    un outil permettant non seulement l'enregistrement d'une note de frais, mais aussi un système de validation de la note si le responsable commercial donne son accord et enfin de mettre un place un système de connexion sécurisée à partir d'une base de donnée distante.  
+                  </p>
+                  <p>Lien Github : <a href="https://github.com/bguerin1/boisduroy">Bois du Roy</a></p>
+                </div>
+            </div>
+            <div class="popup" id="popup-3">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup2()">&times;</div>
+                  <img src="img/wp.png" alt="">
+                  <h2>BTS - Cyberprotective</h2>
+                  <p>Réalisation d'un site web avec le CMS <span>Wordpress</span> pour l'entreprise fictive Cyberprotective, spécialisée dans la réalisation d'audits d'infrastructures informatiques, qui souhaite mettre un place 
+                    un site permettant aux employés des entreprises du bassin d'Angers de se familiariser avec les bases de la cybersécurité. Ce projet était une initiation à l'utilisation d'un CMS tel que Wordpress
+                    de plus en plus répandu aujourd'hui en entreprise. Nous avons utiliser les extensions Elementor et WooCommerce afin de mettre en place une partie présentation de l'entreprise, une partie blog, une partie boutique et enfin un système de connexion au site en local.
+                </p>
+                </div>
+            </div>
+            <div class="popup" id="popup-4">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup3()">&times;</div>
+                  <img src="img/adventure.png" alt="">
+                  <h2>BTS SIO - Adventure</h2>
+                  <p>
+                    Adventure est un site web réalisé en <span>HTML - CSS - JS - PHP</span> tout au long de la 1ère année du BTS SIO. Ce site à d'abord été mis en place en HTML et CSS puis a été complexifié tout au long de l'année pour y intégrer les notions vues au sein des cours et TP.
+                </p>
+                <p>Lien Github : <a href="https://github.com/bguerin1/adventure">Adventure</a></p>
+                </div>
+            </div>
+            <div class="popup" id="popup-5">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup4()">&times;</div>
+                  <img src="img/jeupendu.png" alt="">
+                  <h2>BTS SIO - Jeu du Pendu</h2>
+                  <p>Le Jeu du Pendu est une application réalisé en <span>C#</span> tout au long de la 1ère année du BTS SIO. Cette application a pour but de reconstituer un jeu du pendu qui regroupe l'ensemble des connaissances et compétences apprises au sein de l'année
+                     avec le langage C# et l'IDE Visual Studio. Nous avons commencé par les bases puis finis par l'intégration d'une base de donnée avec un système de connexion ou encore par l'utilisation de la base de donnée comme un dictionnaire de mots à trouver dans le jeu. 
+                  </p>
+                  <p>Lien Github : <a href="https://github.com/bguerin1/JeuDuPendu">Jeu du pendu</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="six" id="veille">
+            <div class="container-profile">
+                <h1>Ma Veille Technologique</h1>
+            
+                <div class="about">
+                    <div class="text">
+                        <p>
+                            La <span>veille technologique</span> est une recherche permanente d'informations utiles qui concernent une thématique précise et donnée. Elle est un <span>processus</span> d’information dont l’objectif est de rester à jour et de se tenir au courant des évolutions d’un sujet donné en consultant différentes sources telles que les nouvelles études, les documents, les ressources physiques ou en ligne qui décrivent les <span>avancées</span> et <span>innovations technologiques</span> récentes du domaine en question. <br> En tant que <span>développeur</span>, cette veille est essentielle pour s’informer sur les <span>nouveaux outils</span> ou <span>méthodes de développement</span> mais aussi sur les potentielles <span>failles de sécurité</span> à connaître pour mieux s’en protéger.                       
+                        </p>
+                    </div>
+                    <img src="img/lofi.gif" class="pic-veille" />
+                    
+                </div>
+                <div class="about-veille">
+                    <div class="text">
+                        <p>
+                            Dans mon cas, ma <span>veille technologique</span> est principalement porté sur le <span>développement</span> et la <span>cybersécurité</span> au travers de nombreux outils qui font maintenant partie intégrante de mon quotidien de développeur :
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h2>Sources :</h2>
+                        <ul>
+                            <li><a href="#veille" onclick="togglePopup5()"><span>1</span> - Feedly</a></li>
+                            <li><a href="#veille" onclick="togglePopup6()"><span>2</span> - Le Monde Informatique</a></li>
+                            <li><a href="#veille" onclick="togglePopup7()"><span>3</span> - /r/webdev</a></li>
+                            <li><span>4</span> - Google  :)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-6">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup5()">&times;</div>
+                  <h2>Feedly</h2>
+                  <p>
+                    <span>Feedly</span> est une application et un aggrégateur de flux RSS qui permet aux utilisateurs de centraliser sur une simple page, 
+                    un ensemble d'articles ayant le même sujet en commun selon une catégorie choisie et qui proviennent d'une infinité de sources différentes.
+                  </p>
+                </div>
+            </div>
+            <div class="popup" id="popup-7">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup6()">&times;</div>
+                  <h2>Le Monde Informatique</h2>
+                  <p>
+                    Le <span>Monde Informatique</span> est un site web de type blog qui publie régulièrement des actualités et analyses dans le domaine de l'informatique et du développement.
+                  </p>
+                </div>
+            </div>
+            <div class="popup" id="popup-8">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup7()">&times;</div>
+                  <h2>/r/webdev</h2>
+                  <p>
+                     Le subreddit /r/webdev est une communauté en ligne dédiée au développement web sur lequel nous retrouvons les dernières actualités, des questions/réponses d'utilisateurs du site ainsi que du partage d'informations et de connaissances.
+                  </p>
+                </div>
+            </div>
+        </section>
+        <section class="four" id="contact">
+            <h1>Contact</h1>
+            <div class="social-icons">
+                <a href="https://fr.linkedin.com/in/bryan-guerin-4a55592a9?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Ffr.linkedin.com%2Fpub%2Fdir%2FBryan%2FGuerin"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/bguerin1?tab=repositories"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-gmail' ></i></a>
+            </div>
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Nom complet" id="name" class="item" autocomplete="off">
+                        <div class="error-txt">
+                            Le nom ne peut pas être vide !
+                        </div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Adresse mail" id="email" class="item" autocomplete="off">
+                        <div class="error-txt">
+                            L'adresse mail ne peut pas être vide !
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Numéro de téléphone" id="phone" class="item" autocomplete="off">
+                        <div class="error-txt">
+                            Le numéro de téléphone ne peut pas être vide !
+                        </div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Sujet" id="sujet" class="item" autocomplete="off">
+                        <div class="error-txt">
+                            Le sujet ne peut pas être vide !
+                        </div>
+                    </div>
+                </div>
+
+                <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Votre message" class="item" autocomplete="off"></textarea>
+                    <div class="error-txt">
+                        Le message ne peut pas être vide !
+                    </div>
+                </div>
+
+                <button type="submit">Envoyez votre message</button>
+            </form>
+
+
+    </div>
+    <footer class="footer">
+
+            <p class="copyright">
+                © Bryan Guerin 2024 | Tous droits réservés
+            </p>
+            <a href="mentions.html">Mentions légales</a>
+            <a href="confidentialité.html">Politique de confidentialité</a>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        /* Filter menu */
+        $(document).on("click",".project-filter li",function(){
+            $(this).addClass("project-filter-active").siblings().removeClass("project-filter-active")
+        })
+
+        /* project work filter */
+
+        $(document).ready(function(){
+            $(".list").click(function(){
+                const value= $(this).attr("data-filter");
+                if(value == "all"){
+                    $(".project-box").show("1000")
+                }
+                else{
+                    $(".project-box").not("."+value).hide("1000")
+                    $(".project-box").filter("."+value).show("1000")
+                }
+            })
+        })
+
+    </script>
+</body>
+</html>
