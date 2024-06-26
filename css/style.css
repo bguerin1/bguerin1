@@ -958,6 +958,15 @@ form button:hover{
     grid-gap: 30px;
   }
 }
+@media (min-width: 1401px) and (max-width: 1450px){
+  .four{
+    margin-top: 100px;
+  }
+  .six{
+    margin-bottom: 250px;
+  }
+}
+
 
 @media (min-width: 1450px){
   .container {
@@ -966,9 +975,10 @@ form button:hover{
   }
   .four{
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   .six{
-    margin-bottom:10px;
+    margin-bottom:150px;
   }
   .one{
     margin-bottom: 100px;
