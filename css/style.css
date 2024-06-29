@@ -134,18 +134,18 @@ ul{
   
 }
 
-.contentt{
+.content{
   text-align:center;
 }
 
-.contentt h1{
+.content h1{
   font-size: 160px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 0;
 }
 
-.contentt h2{
+.content h2{
   margin-bottom: 50px;
   font-size: 40px;
   font-weight: 300;
@@ -795,6 +795,9 @@ section#contact .container form button:hover {
 }
 
 .popup .content h2{
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
   margin-top: 20px;
 }
 
